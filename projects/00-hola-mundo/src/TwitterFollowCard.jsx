@@ -2,6 +2,7 @@ export function TwitterFollowCard({ placeUserName, userName, name, isFollowing})
     // const imageSrc = `https://unavatar.io/${userName}`
     
     return (
+        //todos estos son ELEMENTOS
         <article className='tw-followCard'>
           <header className='tw-followCard-header'>
             <img 
