@@ -1,4 +1,23 @@
-import { useState } from 'react'
+export function App() {
+  return (
+    <article style={{display: 'flex', alignItems: 'center', color: '#fff'}}>
+      <header>
+        <img alt="El avatar de gianni_avril" src="https://unavatar.io/gianni_avril" />
+        <div>
+          <strong>Gianni Avril</strong>
+          <span>@gianni_avril</span>
+        </div>
+      </header>
+
+      <aside>
+        <button>Seguir</button>
+      </aside>
+    </article>
+  )
+}
+
+
+/* import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -33,3 +52,4 @@ function App() {
 }
 
 export default App
+*/
