@@ -1,55 +1,24 @@
-export function App() {
-  return (
-    <article style={{display: 'flex', alignItems: 'center', color: '#fff'}}>
-      <header>
-        <img alt="El avatar de gianni_avril" src="https://unavatar.io/gianni_avril" />
-        <div>
-          <strong>Gianni Avril</strong>
-          <span>@gianni_avril</span>
-        </div>
-      </header>
-
-      <aside>
-        <button>Seguir</button>
-      </aside>
-    </article>
-  )
-}
-
-
-/* import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard'
 
-function App() {
-  const [count, setCount] = useState(0)
+export function App() {
+
+  const funcAddUserName = (userName) => `@${userName}`
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    //Esto era el React.Fragment
+    <section className='App'> 
+      <TwitterFollowCard 
+        placeUserName={funcAddUserName} //paso la fc para que la ejecute en Tw
+        userName={"Scalextric"} 
+        name={"Scalextric"} 
+        isFollowing={false} />
+      <TwitterFollowCard 
+        placeUserName={funcAddUserName} 
+        userName={"pachiFueraDeCarril"} 
+        name={"Pachi Fuera de Carril"} />
+    </section>
   )
 }
 
-export default App
-*/
