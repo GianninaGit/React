@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   justify-content: space-between;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .tw-followCard-infoUserName {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .tw-followCard-avatar {
