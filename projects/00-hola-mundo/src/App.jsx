@@ -5,16 +5,13 @@ export function App() {
   return (
     //Esto era el React.Fragment COMPONENTE
     <section className="App">
-      <TwitterFollowCard
-        userName={"Scalextric"}
-        name={"Scalextric"}
-        isFollowing={false}
-      />
-      <TwitterFollowCard
-        userName={"pachiFueraDeCarril"}
-        name={"Pachi Fuera de Carril"}
-        isFollowing
-      />
+      <TwitterFollowCard isFollowing={false} userName={"Scalextric"}>
+        Scalextric
+      </TwitterFollowCard>
+
+      <TwitterFollowCard isFollowing userName={"pachiFueraDeCarril"}>
+        Pachi
+      </TwitterFollowCard>
     </section>
   );
 }
