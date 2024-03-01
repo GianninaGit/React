@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-export function TwitterFollowCard({ children, userName }) {
+export function TwitterFollowCard({ children, userName, initialIsFollowing }) {
   //OPERADOR CONDICIONAL TERNARIO condition ? expr1 : expr2
-  const [isFollowing, setIsFollowing] = useState(false);
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
   const text = isFollowing ? "Siguiendo" : "Seguir";
   const buttonClassName = isFollowing
     ? "tw-followCard-button is-following"

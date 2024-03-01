@@ -5,11 +5,11 @@ export function App() {
   return (
     //Esto era el React.Fragment COMPONENTE
     <section className="App">
-      <TwitterFollowCard isFollowing={false} userName={"Scalextric"}>
+      <TwitterFollowCard initialIsFollowing={false} userName={"Scalextric"}>
         Scalextric
       </TwitterFollowCard>
 
-      <TwitterFollowCard isFollowing userName={"pachiFueraDeCarril"}>
+      <TwitterFollowCard initialIsFollowing userName={"pachiFueraDeCarril"}>
         Pachi Fuera de Carril
       </TwitterFollowCard>
     </section>
