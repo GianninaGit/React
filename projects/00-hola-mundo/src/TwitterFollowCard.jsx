@@ -4,7 +4,8 @@ export function TwitterFollowCard({
   name,
   isFollowing,
 }) {
- 
+  console.log(isFollowing);
+
   return (
     //todos estos son ELEMENTOS
     <article className="tw-followCard">
@@ -17,7 +18,7 @@ export function TwitterFollowCard({
         />
         <div className="tw-followCard-info">
           <strong>{name}</strong>
-          <span className="tw-followCard-infoUserName">{placeUserName}</span>
+          <span className="tw-followCard-infoUserName">@{userName}</span>
         </div>
       </header>
 
