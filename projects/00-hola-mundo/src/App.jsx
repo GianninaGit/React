@@ -10,7 +10,7 @@ export function App() {
       </TwitterFollowCard>
 
       <TwitterFollowCard isFollowing userName={"pachiFueraDeCarril"}>
-        Pachi
+        Pachi Fuera de Carril
       </TwitterFollowCard>
     </section>
   );
