@@ -1,4 +1,17 @@
-export function TwitterFollowCard({ children, userName }) {
+import { useState } from "react";
+
+export function TwitterFollowCard({ children, userName, initialIsFollowing }) {
+  //OPERADOR CONDICIONAL TERNARIO condition ? expr1 : expr2
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
+  const text = isFollowing ? "Following" : "Follow";
+  const buttonClassName = isFollowing
+    ? "tw-followCard-button is-following"
+    : "tw-followCard-button";
+
+  const handleClick = () => {
+    setIsFollowing(!isFollowing);
+  };
+
   return (
     //todos estos son ELEMENTOS
     <article className="tw-followCard">
@@ -15,7 +28,10 @@ export function TwitterFollowCard({ children, userName }) {
       </header>
 
       <aside>
-        <button className="tw-followCard-button">Seguir</button>
+        <button className={buttonClassName} onClick={handleClick}>
+          <span className="tw-followCard-text">{text}</span>
+          <span className="tw-followCard-unfollow">Unfollow</span>
+        </button>
       </aside>
     </article>
   );
