@@ -21,7 +21,7 @@ const Square = ({ children, isSelected, updateBoard, index }) => {
     </div>
   );
 };
-
+//prueba
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [turn, setTurn] = useState(TURNS.X);
