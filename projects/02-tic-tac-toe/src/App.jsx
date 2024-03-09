@@ -62,10 +62,9 @@ function App() {
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
     setTurn(newTurn);
 
-    const newWinner = checkWinner(newBoard);
+    const newWinner = checkWinner(newBoard); //si aquí yo le paso el board
     if (newWinner) {
-      alert(`El ganador es ${newWinner}`);
-      setWinner(newWinner);
+      setWinner(newWinner); //la actualización de los estados es ASINCRONA, aquí todavía no tiene el nuevo estado, por eso sale null
     }
   };
 
