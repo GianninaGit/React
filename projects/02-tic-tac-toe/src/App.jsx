@@ -45,7 +45,7 @@ function App() {
     //guardar partida:
     saveGameToStorage({
       board: newBoard,
-      turn: newTurn
+      turn: newTurn,
     });
 
     //Checkear si hay ganador o aún no:
