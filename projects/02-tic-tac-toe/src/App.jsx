@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import confetti from "canvas-confetti";
+import confetti from "../node_modules/canvas-confetti";
 
 const TURNS = {
   X: "x",
